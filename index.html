@@ -1,24 +1,46 @@
 <!doctype html>
 
 <html>
-
     <head>
+        <div class="header-background" style="margin-top:0;">
+            <header>
+                <h1>Projection Percentage Calculator</h1>
+            </header>
+        </div>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Projection Percentage Calculator</title>
-        <link rel="style" href="Style.css"> <!--link to css style sheet-->
+        <link rel="stylesheet" href="Style.css"> 
+        <script src="Script.js"></script>
     </head>
+    <br><br>
     <main>
-        <header>
-            <h1>Projection Percentage Calculator</h1>
-        </header>
+        
 
         <br>
 
         <body>
-            <label for="A">A:</label>
-            <input type="text" id="A" name="A"><br><br>
-            <label for="B">B:</label>
-            <input type="text" id="B" name="B"><br><br>
-
+            <div id="calculator">
+                <p>(A-B)/B x 100 =</p>
+                <input id="display" readonly>
+                <br><br>
+                <p>A</p>
+                <input id="A" type="number">
+                <br><br>
+                <p>B</p>
+                <input id="B" type="number">
+                <br><br>
+                <button onclick="calculate()">Calculate</button>
+            </div>
+            <script>
+                function calculate() {
+                  var a = document.getElementById('A').value;
+                  var b = document.getElementById('B').value;
+              
+                  var c = (parseInt(a) - parseInt(b))/parseInt(b)*100;
+                  display.value=Math.round(c);
+                }
+              </script>
         </body>
 
 

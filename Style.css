@@ -1,5 +1,41 @@
+html {
+    background-color: rgb(30, 30, 30);
+}
+
 h1{
     font-size: 2em;
     text-align: center;
+    color: white;
+}
+.header-background {
+    background: #016168;
+    border: 0px solid #467813;
+    border-radius: 0px;
+    color: #fff;
+    padding: 10px 0px 10px 20px;
+    left:0;
+    right:0;
+    margin:0;
+    top:0;
+ 
+  
+  }
+main {
+    text-align: center;
 }
 
+p {
+    font-size: 1.5em;
+}
+
+#calculator {
+    
+    background-color: #016168;
+    border-radius: 5em;
+    padding: 10px 0px 10px 20px;
+    width: 20%;
+    height: 20%;
+    margin-left: 40%;
+    
+    
+}
