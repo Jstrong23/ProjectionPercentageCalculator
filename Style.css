@@ -7,10 +7,9 @@ h1{
     text-align: center;
     color: white;
 }
-.header-background {
+.headerfooter-background {
     background: #016168;
     border: 0px solid #467813;
-    border-radius: 0px;
     color: #fff;
     padding: 10px 0px 10px 0px;
     left:0;
@@ -40,4 +39,32 @@ p {
 
     
     
+}
+
+.libutton {
+    padding: 7px;
+    text-align: center;
+    outline: none;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    width: 200px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #0A66C2;
+    font-family: "SF Pro Text", Helvetica, sans-serif;
+    }
+
+.footer-text {
+    font-size: 1em;
+}
+
+footer {
+    position: fixed;
+    background: #016168;
+    border: 0px solid #467813;
+    color: #fff;
+    padding: 10px 0px 10px 0px;
+    bottom: 0px;
+    width: 100%;
+    border-radius: 5em;
 }
