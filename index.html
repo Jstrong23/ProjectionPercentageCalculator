@@ -1,60 +1,53 @@
 <!doctype html>
-
 <html>
-    <head>
-        <div class="headerfooter-background" style="margin-top:0;">
-            <header>
-                <h1>Projection Percentage Calculator</h1>
-            </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projection Percentage Calculator</title>
+    <link rel="stylesheet" href="Style.css"> 
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+
+      <div class="header-background" style="margin-top:0;">
+        <header>
+          <h1>Projection Percentage Calculator</h1>
+        </header>
+      </div>
+      <br><br>
+
+      <main>
+        <div id="calculator">
+          <p>(A-B)/B x 100 =</p>
+          <input id="display" readonly>
+          <br><br>
+          <p>A</p>
+          <input id="A" type="number" onfocus="this.value=''">
+          <br><br>
+          <p>B</p>
+          <input id="B" type="number" onfocus="this.value=''">
+          <br><br>
+          <button onclick="calculate()">Calculate</button>
         </div>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Projection Percentage Calculator</title>
-        <link rel="stylesheet" href="Style.css"> 
+      </main>
 
-    </head>
-    <br><br>
-    <main>
-        
+      <footer>
+        <div><br>
+          <a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=joshua-strong-684a50361" target="_blank">Follow on LinkedIn</a>
+          <p class="footer-text">www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=joshua-strong-684a50361</p>
+        </div>
+      </footer>
 
-        <br>
+    </div>
 
-        <body>
-            <div id="calculator">
-                <p>(A-B)/B x 100 =</p>
-                <input id="display" readonly>
-                <br><br>
-                <p>A</p>
-                <input id="A" type="number" onfocus="this.value=''">
-                <br><br>
-                <p>B</p>
-                <input id="B" type="number" onfocus="this.value=''">
-                <br><br>
-                <button onclick="calculate()">Calculate</button>
-            </div>
-            <script>
-                function calculate() {
-                  var a = document.getElementById('A').value;
-                  var b = document.getElementById('B').value;
-              
-                  var c = (parseInt(a) - parseInt(b))/parseInt(b)*100;
-                  
-                  display.value=(Math.round(c));
-                }
-              </script>
-        </body>
-
-        <footer>
-            <div><br>
-                <a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=joshua-strong-684a50361" target="_blank">Follow on LinkedIn</a>
-                <p class="footer-text">www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=joshua-strong-684a50361</p>
-            </div>
-        </footer>
-
-
-    </main>
-
-
-
-
+    <script>
+      function calculate() {
+        var a = document.getElementById('A').value;
+        var b = document.getElementById('B').value;
+        var c = (parseInt(a) - parseInt(b)) / parseInt(b) * 100;
+        display.value = Math.round(c);
+      }
+    </script>
+  </body>
 </html>
