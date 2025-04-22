@@ -67,4 +67,6 @@ footer {
     bottom: 0px;
     width: 100%;
     border-radius: 5em;
+    left:0;
+    right:0;
 }
